@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- namespace - bind relative dao interface -->
 
-<mapper>
+<mapper namespace="com.shiwu.dao.AdminDao">
     <select id="getAdminList" resultType="com.shiwu.entity.Admin">
         select * from manage.admin;
     </select>
