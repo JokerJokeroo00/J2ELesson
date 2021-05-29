@@ -6,6 +6,13 @@
 
 <mapper namespace="com.shiwu.dao.AdminDao">
     <select id="getAdminList" resultType="com.shiwu.entity.Admin">
-        select * from manage.admin;
+        select *
+        from manage.admin;
+    </select>
+    <select id="login" resultType="com.shiwu.entity.Admin">
+        select *
+        from manage.admin
+        where login_name = #{arg0}
+          and login_password = #{arg1}
     </select>
 </mapper>
