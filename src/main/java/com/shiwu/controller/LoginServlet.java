@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet
         Object object = loginService.login(username, password);
         if (object != null)
         {
-
+            response.sendRedirect("index.jsp");
         }
     }
 }
